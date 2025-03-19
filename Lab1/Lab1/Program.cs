@@ -25,6 +25,7 @@ Console.WriteLine(string.Join(", ", C));
 int a = A.Data.Skip(Array.FindIndex(A.Data, x => x > 0) + 1).Where(x => x < 0).Sum();
 int b = (B.Data.Skip(Array.FindIndex(B.Data, x => x > 0) + 1).Where(x => x < 0).Sum())*2;
 int c = (C.Skip(Array.FindIndex(C, x => x > 0) + 1).Where(x => x < 0).Sum())/2;
+Console.WriteLine($"a:{a}, b:{b}, c:{c}");
 
 double result = (2 * Math.Sin(a) + 3 * b * Math.Pow(Math.Cos(c), 3)) / (a + b);
 Console.WriteLine(result);
