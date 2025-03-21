@@ -12,25 +12,25 @@ namespace Task2
         private int birthYear;
         private double[] results;
 
-        public SportsMan(string surname, int BirthYear, double[] results)
+        public SportsMan(string Surname, int BirthYear, double[] Results)
         {
-            this.surname = surname;
-            this.birthYear = birthYear;
-            this.results = results;
+            surname = Surname;
+            birthYear = BirthYear;
+            results = Results;
         }
         private double midleResult()
         {
             double sum = 0;
-            for (int i = 0; i < this.results.Length; i++)
+            for (int i = 0; i < results.Length; i++)
             {
-                sum += this.results[i];
+                sum += results[i];
             }
-            sum = sum / this.results.Length;
+            sum = sum / results.Length;
             return sum;
         }
         public string resurnSportsman()
         {
-            return $"Фамилия: {this.surname}, Среднее значения: {this.midleResult}, Год рождения: {this.birthYear}";
+            return $"Фамилия: {surname}, Среднее значения: {midleResult()}, Год рождения: {birthYear}";
         }
     }
 }

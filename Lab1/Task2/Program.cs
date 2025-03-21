@@ -1,8 +1,9 @@
 ﻿using System;
 using Task2;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 List<SportsMan> sportsmans = new List<SportsMan>();
 
-Console.WriteLine("");
+Console.WriteLine("Введите количество спорцменов");
 int coutnSportsmans = 0;
 for (int i = 0; i < 1;)
 {
@@ -14,7 +15,6 @@ for (int i = 0; i < 1;)
         Console.WriteLine("КОЛИЧЕСТВО ЭТО ТОЛЬКО ЦЕЛОЕ ПОЛОЖИТЕЛЬНОЕ ЧИСЛО");
     }
 }
-Console.WriteLine(coutnSportsmans);
 for (int i = 0; i < coutnSportsmans; i++)
 {
     Console.WriteLine($"Ввудите фамилию спорцмена {i + 1}");
@@ -45,13 +45,13 @@ for (int i = 0; i < coutnSportsmans; i++)
             Console.WriteLine("КОЛИЧЕСТВО ЭТО ТОЛЬКО ЦЕЛОЕ ПОЛОЖИТЕЛЬНОЕ ЧИСЛО");
         }
     }
-    double[] result = new double[countResults];
+    double[] results = new double[countResults];
     for (int j = 0; j < countResults; j++)
     {
         for (int z = 0; z < 1;)
         {
             Console.WriteLine($"Введите {j + 1} результат спорцмена {i + 1}");
-            if (double.TryParse(Console.ReadLine(), out result[j]) && coutnSportsmans > 0)
+            if (double.TryParse(Console.ReadLine(), out results[j]) && coutnSportsmans > 0)
             {
                 z++;
             }
@@ -61,7 +61,13 @@ for (int i = 0; i < coutnSportsmans; i++)
             }
         }
     }
-    Console.WriteLine(surname);
-    Console.WriteLine(birthYear);
-    Console.WriteLine(result);
+    Console.WriteLine("Фамилия: "+surname);
+    Console.WriteLine("Год рождения: "+birthYear);
+    Console.WriteLine("Результаты: "+string.Join("; ", results));
+    sportsmans.Add(new SportsMan(surname, birthYear, results));
+}
+
+for (int i = 0; i < coutnSportsmans; i++)
+{
+    Console.WriteLine($"Спорцмен {i + 1}: " + sportsmans[i].resurnSportsman());
 }
