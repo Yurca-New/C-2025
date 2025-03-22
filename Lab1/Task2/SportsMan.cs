@@ -18,7 +18,11 @@ namespace Task2
             birthYear = BirthYear;
             results = Results;
         }
-        private double midleResult()
+        public int getBirthYear()
+        {
+            return birthYear;
+        }
+        public double midleResult()
         {
             double sum = 0;
             for (int i = 0; i < results.Length; i++)

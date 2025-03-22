@@ -67,7 +67,92 @@ for (int i = 0; i < coutnSportsmans; i++)
     sportsmans.Add(new SportsMan(surname, birthYear, results));
 }
 
+int minYear = sportsmans.Min(s => s.getBirthYear());
+int maxYear = sportsmans.Max(s => s.getBirthYear());
+for (; minYear <= maxYear + 1; minYear++)
+{
+    for (int i = 0; i < sportsmans.Count; i++)
+    {
+
+        if (sportsmans[i].getBirthYear() == minYear)
+        {
+            Console.WriteLine(sportsmans[i].resurnSportsman());
+        }
+    }
+}
+double minCount = 0;
+int countSporstmanM = 0;
+for (int j = 0; j < 1;)
+{
+    Console.WriteLine("Введите предел средних результатов");
+    if (double.TryParse(Console.ReadLine(), out minCount) && minCount > 0)
+    {
+        j++;
+    }
+    else
+    {
+        Console.WriteLine("ПРЕДЕЛ СРЕДНИХ ЗНАЧЕНИЙ ЭТО ТОЛЬКО ПОЛОЖИТЕЛЬНОЕ ЧИСЛО");
+    }
+}
 for (int i = 0; i < coutnSportsmans; i++)
 {
-    Console.WriteLine($"Спорцмен {i + 1}: " + sportsmans[i].resurnSportsman());
+    if (sportsmans[i].midleResult() > minCount)
+    {
+        countSporstmanM++;
+    }
+}
+Console.WriteLine("Количество спорцменов в которых средний результат был больше заданого: " + countSporstmanM);
+
+double minRange = 0;
+double maxRange = 0;
+for (int j = 0; j < 1;)
+{
+    Console.WriteLine("Введите минимальный предел диапазона результатов");
+    if (double.TryParse(Console.ReadLine(), out minRange) && minRange > 0)
+    {
+        j++;
+    }
+    else
+    {
+        Console.WriteLine("МИНИМАЛЬНЫЙ ПРЕДЕЛ ДИАПАЗОНА ЭТО ТОЛЬКО ПОЛОЖИТЕЛЬНОЕ ЧИСЛО");
+    }
+}
+for (int j = 0; j < 1;)
+{
+    Console.WriteLine("Введите максимальный предел диапазона результатов");
+    if (double.TryParse(Console.ReadLine(), out maxRange) && maxRange > minRange)
+    {
+        j++;
+    }
+    else
+    {
+        Console.WriteLine("МАКСИМАЛЬНЫЙ ПРЕДЕЛ ДИАПАЗОНА ДОЛЖЕН БЫТЬ ПОЛОЖИТЕЛЬНОЕ ЧИСЛО БОЛЬШЕ МИНИМАЛЬНОГО ПРЕДЕЛА");
+    }
+}
+List<SportsMan> listSportsmans = new List<SportsMan>();
+for (int i = 0; i < coutnSportsmans; i++)
+{
+    if (sportsmans[i].midleResult() > minRange && sportsmans[i].midleResult() < maxRange)
+    {
+        listSportsmans.Add(sportsmans[i]);
+    }
+}
+minYear = listSportsmans.Min(s => s.getBirthYear()); 
+maxYear = listSportsmans.Max(s => s.getBirthYear());
+for (; minYear <= maxYear + 1; minYear++)
+{
+    int f = 0;
+    for (int i = 0; i < listSportsmans.Count; i++)
+    {
+        
+        if (listSportsmans[i].getBirthYear() == minYear)
+        {
+            if (f == 0)
+            {
+                Console.WriteLine($"Год рождения: {minYear}");
+                f++;
+            }
+            Console.WriteLine(listSportsmans[i].resurnSportsman());
+        }
+    }
 }
