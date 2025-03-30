@@ -6,35 +6,23 @@ using System.Threading.Tasks;
 
 namespace Task2
 {
-    internal class SportsMan
+    public class SportsMan
     {
-        private string surname;
-        private int birthYear;
-        private double[] results;
+        public string Surname { get; }
+        public int BirthYear { get; }
+        public double[] Results { get; }
+        public double AverageResult => Results.Average();
 
-        public SportsMan(string Surname, int BirthYear, double[] Results)
+        public SportsMan(string surname, int birthYear, double[] results)
         {
-            surname = Surname;
-            birthYear = BirthYear;
-            results = Results;
+            Surname = surname;
+            BirthYear = birthYear;
+            Results = results;
         }
-        public int getBirthYear()
+
+        public override string ToString()
         {
-            return birthYear;
-        }
-        public double midleResult()
-        {
-            double sum = 0;
-            for (int i = 0; i < results.Length; i++)
-            {
-                sum += results[i];
-            }
-            sum = sum / results.Length;
-            return sum;
-        }
-        public string resurnSportsman()
-        {
-            return $"Фамилия: {surname}, Среднее значения: {midleResult()}, Год рождения: {birthYear}";
+            return $"Фамилия: {Surname}, Год рождения: {BirthYear}, Средний результат: {AverageResult:F2}";
         }
     }
 }
