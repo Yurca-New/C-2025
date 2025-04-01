@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4EB1CB05-882A-4559-A42B-ED32A17D1683}|Lab2\\Lab2.csproj|c:\\users\\yurii\\desktop\\t-shirtprint\\c-2025\\lab2\\lab2\\librarybook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EB1CB05-882A-4559-A42B-ED32A17D1683}|Lab2\\Lab2.csproj|solutionrelative:lab2\\librarybook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EB1CB05-882A-4559-A42B-ED32A17D1683}|Lab2\\Lab2.csproj|c:\\users\\yurii\\desktop\\t-shirtprint\\c-2025\\lab2\\lab2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EB1CB05-882A-4559-A42B-ED32A17D1683}|Lab2\\Lab2.csproj|solutionrelative:lab2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EB1CB05-882A-4559-A42B-ED32A17D1683}|Lab2\\Lab2.csproj|c:\\users\\yurii\\desktop\\t-shirtprint\\c-2025\\lab2\\lab2\\userinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EB1CB05-882A-4559-A42B-ED32A17D1683}|Lab2\\Lab2.csproj|solutionrelative:lab2\\userinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserInterface.cs",
+              "DocumentMoniker": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab2\\Lab2\\UserInterface.cs",
+              "RelativeDocumentMoniker": "Lab2\\UserInterface.cs",
+              "ToolTip": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab2\\Lab2\\UserInterface.cs",
+              "RelativeToolTip": "Lab2\\UserInterface.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAIAwwB4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T10:21:56.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LibraryBook.cs",
+              "DocumentMoniker": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab2\\Lab2\\LibraryBook.cs",
+              "RelativeDocumentMoniker": "Lab2\\LibraryBook.cs",
+              "ToolTip": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab2\\Lab2\\LibraryBook.cs*",
+              "RelativeToolTip": "Lab2\\LibraryBook.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T10:09:40.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab2\\Lab2\\Program.cs",
+              "RelativeDocumentMoniker": "Lab2\\Program.cs",
+              "ToolTip": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab2\\Lab2\\Program.cs",
+              "RelativeToolTip": "Lab2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T10:09:06.357Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
