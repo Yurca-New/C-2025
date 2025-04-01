@@ -11,13 +11,7 @@ namespace Task2
     {
         public IEnumerable<SportsMan> GetSportsMenByYearRange(IEnumerable<SportsMan> sportsmen)
         {
-            var minYear = sportsmen.Min(s => s.BirthYear);
-            var maxYear = sportsmen.Max(s => s.BirthYear);
-
-            return sportsmen
-                .OrderBy(s => s.BirthYear)
-                .GroupBy(s => s.BirthYear)
-                .SelectMany(g => g);
+            return sportsmen.OrderBy(s => s.BirthYear);
         }
 
         public IEnumerable<SportsMan> FilterByAverage(IEnumerable<SportsMan> sportsmen, double minValue)

@@ -28,7 +28,7 @@ namespace Task1
             );
         }
 
-        private static int CalculateSum(int[] data)
+        private int CalculateSum(int[] data)
         {
             var arr = data;
             var firstPositiveIndex = Array.FindIndex(arr, x => x > 0);

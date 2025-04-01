@@ -27,15 +27,11 @@ namespace Task1
             Console.WriteLine(string.Join(", ", array));
         }
 
-        public void ShowCalculationResults(CalculationResults results)
-        {
+        public void ShowCalculationResults(CalculationResults results) =>
             Console.WriteLine($"A: {results.A},B: {results.B},C: {results.C}");
-        }
 
-        public void ShowFinalResult(double FinalResult)
-        {
+        public void ShowFinalResult(double FinalResult)=>
             Console.WriteLine($"Финальный результат функции будет: {FinalResult}");
-        }
 
         public int GetPositiveIntInput(string prompt, string errorMessage)
         {

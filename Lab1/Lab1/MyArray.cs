@@ -43,11 +43,7 @@ namespace Task1
             }
         }
 
-        public void OutputElements()
-        {
-            _userInterface.ShowArray(_name, _data);
-        }
-
+        public void OutputElements() => _userInterface.ShowArray(_name, _data);
 
         public int GetFirstMinIndex() => Array.IndexOf(_data, _data.Min());
         public int GetLastMinIndex() => Array.LastIndexOf(_data, _data.Min());

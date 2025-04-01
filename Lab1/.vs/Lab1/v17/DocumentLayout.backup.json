@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D499BD74-DCDA-4009-80C6-551C0790E00B}|Task2\\Task2.csproj|c:\\users\\yurii\\desktop\\t-shirtprint\\c-2025\\lab1\\task2\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D499BD74-DCDA-4009-80C6-551C0790E00B}|Task2\\Task2.csproj|solutionrelative:task2\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D499BD74-DCDA-4009-80C6-551C0790E00B}|Task2\\Task2.csproj|c:\\users\\yurii\\desktop\\t-shirtprint\\c-2025\\lab1\\task2\\consoleuserinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D499BD74-DCDA-4009-80C6-551C0790E00B}|Task2\\Task2.csproj|solutionrelative:task2\\consoleuserinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D499BD74-DCDA-4009-80C6-551C0790E00B}|Task2\\Task2.csproj|c:\\users\\yurii\\desktop\\t-shirtprint\\c-2025\\lab1\\task2\\sportsman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D499BD74-DCDA-4009-80C6-551C0790E00B}|Task2\\Task2.csproj|solutionrelative:task2\\sportsman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D499BD74-DCDA-4009-80C6-551C0790E00B}|Task2\\Task2.csproj|c:\\users\\yurii\\desktop\\t-shirtprint\\c-2025\\lab1\\task2\\sportsmanapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,16 +19,40 @@
       "RelativeMoniker": "D:0:0:{D499BD74-DCDA-4009-80C6-551C0790E00B}|Task2\\Task2.csproj|solutionrelative:task2\\servis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D499BD74-DCDA-4009-80C6-551C0790E00B}|Task2\\Task2.csproj|c:\\users\\yurii\\desktop\\t-shirtprint\\c-2025\\lab1\\task2\\consoleuserinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D499BD74-DCDA-4009-80C6-551C0790E00B}|Task2\\Task2.csproj|solutionrelative:task2\\consoleuserinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D499BD74-DCDA-4009-80C6-551C0790E00B}|Task2\\Task2.csproj|c:\\users\\yurii\\desktop\\t-shirtprint\\c-2025\\lab1\\task2\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D499BD74-DCDA-4009-80C6-551C0790E00B}|Task2\\Task2.csproj|solutionrelative:task2\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D499BD74-DCDA-4009-80C6-551C0790E00B}|Task2\\Task2.csproj|c:\\users\\yurii\\desktop\\t-shirtprint\\c-2025\\lab1\\task2\\sportsman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D499BD74-DCDA-4009-80C6-551C0790E00B}|Task2\\Task2.csproj|solutionrelative:task2\\sportsman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04EC3B37-85CE-4059-AA70-A7F3248E95B5}|Lab1\\Task1.csproj|c:\\users\\yurii\\desktop\\t-shirtprint\\c-2025\\lab1\\lab1\\userinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04EC3B37-85CE-4059-AA70-A7F3248E95B5}|Lab1\\Task1.csproj|solutionrelative:lab1\\userinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04EC3B37-85CE-4059-AA70-A7F3248E95B5}|Lab1\\Task1.csproj|c:\\users\\yurii\\desktop\\t-shirtprint\\c-2025\\lab1\\lab1\\myarray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04EC3B37-85CE-4059-AA70-A7F3248E95B5}|Lab1\\Task1.csproj|solutionrelative:lab1\\myarray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{04EC3B37-85CE-4059-AA70-A7F3248E95B5}|Lab1\\Task1.csproj|c:\\users\\yurii\\desktop\\t-shirtprint\\c-2025\\lab1\\lab1\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04EC3B37-85CE-4059-AA70-A7F3248E95B5}|Lab1\\Task1.csproj|solutionrelative:lab1\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04EC3B37-85CE-4059-AA70-A7F3248E95B5}|Lab1\\Task1.csproj|c:\\users\\yurii\\desktop\\t-shirtprint\\c-2025\\lab1\\lab1\\interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04EC3B37-85CE-4059-AA70-A7F3248E95B5}|Lab1\\Task1.csproj|solutionrelative:lab1\\interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04EC3B37-85CE-4059-AA70-A7F3248E95B5}|Lab1\\Task1.csproj|c:\\users\\yurii\\desktop\\t-shirtprint\\c-2025\\lab1\\lab1\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04EC3B37-85CE-4059-AA70-A7F3248E95B5}|Lab1\\Task1.csproj|solutionrelative:lab1\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04EC3B37-85CE-4059-AA70-A7F3248E95B5}|Lab1\\Task1.csproj|c:\\users\\yurii\\desktop\\t-shirtprint\\c-2025\\lab1\\lab1\\calculationresults.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04EC3B37-85CE-4059-AA70-A7F3248E95B5}|Lab1\\Task1.csproj|solutionrelative:lab1\\calculationresults.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04EC3B37-85CE-4059-AA70-A7F3248E95B5}|Lab1\\Task1.csproj|c:\\users\\yurii\\desktop\\t-shirtprint\\c-2025\\lab1\\lab1\\arrayprocessingapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04EC3B37-85CE-4059-AA70-A7F3248E95B5}|Lab1\\Task1.csproj|solutionrelative:lab1\\arrayprocessingapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04EC3B37-85CE-4059-AA70-A7F3248E95B5}|Lab1\\Task1.csproj|c:\\users\\yurii\\desktop\\t-shirtprint\\c-2025\\lab1\\lab1\\arrayoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04EC3B37-85CE-4059-AA70-A7F3248E95B5}|Lab1\\Task1.csproj|solutionrelative:lab1\\arrayoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,30 +62,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "UserInterface.cs",
+              "DocumentMoniker": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Lab1\\UserInterface.cs",
+              "RelativeDocumentMoniker": "Lab1\\UserInterface.cs",
+              "ToolTip": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Lab1\\UserInterface.cs",
+              "RelativeToolTip": "Lab1\\UserInterface.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAuwCAAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T08:57:48.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Lab1\\Main.cs",
               "RelativeDocumentMoniker": "Lab1\\Main.cs",
               "ToolTip": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Lab1\\Main.cs",
               "RelativeToolTip": "Lab1\\Main.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-30T21:20:46.317Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Task2\\Main.cs",
               "RelativeDocumentMoniker": "Task2\\Main.cs",
               "ToolTip": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Task2\\Main.cs",
               "RelativeToolTip": "Task2\\Main.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-30T21:18:54.759Z",
               "EditorCaption": ""
@@ -65,59 +106,137 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "SportsMan.cs",
+              "DocumentMoniker": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Task2\\SportsMan.cs",
+              "RelativeDocumentMoniker": "Task2\\SportsMan.cs",
+              "ToolTip": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Task2\\SportsMan.cs*",
+              "RelativeToolTip": "Task2\\SportsMan.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T20:45:37.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SportsManApp.cs",
               "DocumentMoniker": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Task2\\SportsManApp.cs",
               "RelativeDocumentMoniker": "Task2\\SportsManApp.cs",
-              "ToolTip": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Task2\\SportsManApp.cs*",
-              "RelativeToolTip": "Task2\\SportsManApp.cs*",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAhwCUAAAA2AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Task2\\SportsManApp.cs",
+              "RelativeToolTip": "Task2\\SportsManApp.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-30T21:09:54.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SportsMan.cs",
-              "DocumentMoniker": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Task2\\SportsMan.cs",
-              "RelativeDocumentMoniker": "Task2\\SportsMan.cs",
-              "ToolTip": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Task2\\SportsMan.cs",
-              "RelativeToolTip": "Task2\\SportsMan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBgAAABoAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "CalculationResults.cs",
+              "DocumentMoniker": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Lab1\\CalculationResults.cs",
+              "RelativeDocumentMoniker": "Lab1\\CalculationResults.cs",
+              "ToolTip": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Lab1\\CalculationResults.cs",
+              "RelativeToolTip": "Lab1\\CalculationResults.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T20:45:37.058Z",
+              "WhenOpened": "2025-04-01T08:53:16.315Z",
               "EditorCaption": ""
             }
           ]
         },
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "MyArray.cs",
+              "DocumentMoniker": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Lab1\\MyArray.cs",
+              "RelativeDocumentMoniker": "Lab1\\MyArray.cs",
+              "ToolTip": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Lab1\\MyArray.cs",
+              "RelativeToolTip": "Lab1\\MyArray.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAADwvy4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:39:39.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InterFace.cs",
+              "DocumentMoniker": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Lab1\\InterFace.cs",
+              "RelativeDocumentMoniker": "Lab1\\InterFace.cs",
+              "ToolTip": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Lab1\\InterFace.cs",
+              "RelativeToolTip": "Lab1\\InterFace.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAowBoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T08:57:43.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Calculator.cs",
+              "DocumentMoniker": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Lab1\\Calculator.cs",
+              "RelativeDocumentMoniker": "Lab1\\Calculator.cs",
+              "ToolTip": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Lab1\\Calculator.cs",
+              "RelativeToolTip": "Lab1\\Calculator.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T08:57:31.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConsoleUserInterface.cs",
+              "DocumentMoniker": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Task2\\ConsoleUserInterface.cs",
+              "RelativeDocumentMoniker": "Task2\\ConsoleUserInterface.cs",
+              "ToolTip": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Task2\\ConsoleUserInterface.cs*",
+              "RelativeToolTip": "Task2\\ConsoleUserInterface.cs*",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowDIAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T21:03:14.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Servis.cs",
               "DocumentMoniker": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Task2\\Servis.cs",
               "RelativeDocumentMoniker": "Task2\\Servis.cs",
-              "ToolTip": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Task2\\Servis.cs*",
-              "RelativeToolTip": "Task2\\Servis.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAPAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Task2\\Servis.cs",
+              "RelativeToolTip": "Task2\\Servis.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-30T22:26:20.467Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ConsoleUserInterface.cs",
-              "DocumentMoniker": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Task2\\ConsoleUserInterface.cs",
-              "RelativeDocumentMoniker": "Task2\\ConsoleUserInterface.cs",
-              "ToolTip": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Task2\\ConsoleUserInterface.cs*",
-              "RelativeToolTip": "Task2\\ConsoleUserInterface.cs*",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowBcAAABFAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "ArrayProcessingApp.cs",
+              "DocumentMoniker": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Lab1\\ArrayProcessingApp.cs",
+              "RelativeDocumentMoniker": "Lab1\\ArrayProcessingApp.cs",
+              "ToolTip": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Lab1\\ArrayProcessingApp.cs",
+              "RelativeToolTip": "Lab1\\ArrayProcessingApp.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwDcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T21:03:14.072Z",
+              "WhenOpened": "2025-04-01T08:37:01.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ArrayOperation.cs",
+              "DocumentMoniker": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Lab1\\ArrayOperation.cs",
+              "RelativeDocumentMoniker": "Lab1\\ArrayOperation.cs",
+              "ToolTip": "C:\\Users\\Yurii\\Desktop\\T-shirtPrint\\C-2025\\Lab1\\Lab1\\ArrayOperation.cs",
+              "RelativeToolTip": "Lab1\\ArrayOperation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T09:40:26.286Z",
               "EditorCaption": ""
             }
           ]

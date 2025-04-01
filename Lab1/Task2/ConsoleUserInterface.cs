@@ -34,10 +34,8 @@ namespace Task2
             return Console.ReadLine() ?? string.Empty;
         }
 
-        public void ShowMessage(string message)
-        {
+        public void ShowMessage(string message) =>
             Console.WriteLine(message);
-        }
 
         public void ShowError(string message)
         {
@@ -50,7 +48,7 @@ namespace Task2
         {
             foreach (var sportsman in sportsmen)
             {
-                Console.WriteLine(sportsman);
+                Console.WriteLine(sportsman.ToString());
             }
         }
 
