@@ -14,10 +14,6 @@ namespace Lab2
         private readonly string author;
         private bool isAvailable;
 
-        public string Title => title;
-        public string Author => author;
-        public bool IsAvailable => isAvailable;
-
         public LibraryBook(string title, string author)
         {
             this.title = _userInterface.TestNullString(title, "The title of the book cannot be empty");
