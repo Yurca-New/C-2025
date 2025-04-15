@@ -1,6 +1,7 @@
 ﻿using Lab2;
 UserInterface userInterface = new UserInterface();
-LibraryBook book = new LibraryBook("1984", "George Orwell");
+Logic logic = new Logic();
+LibraryBook book = logic.CreateLibraryBook();
 
 userInterface.ShowMessage(book.GetInfo());
 book.BorrowBook();
@@ -11,4 +12,5 @@ book.BorrowBook();
 
 book.ReturnBook();
 userInterface.ShowMessage("After returning the book:");
-userInterface.ShowMessage(book.GetInfo());
+string bookInfo = book.GetInfo();
+userInterface.ShowMessage(bookInfo);

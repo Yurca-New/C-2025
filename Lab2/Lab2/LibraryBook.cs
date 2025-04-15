@@ -16,8 +16,8 @@ namespace Lab2
 
         public LibraryBook(string title, string author)
         {
-            this.title = _userInterface.TestNullString(title, "The title of the book cannot be empty");
-            this.author = _userInterface.TestNullString(author, "The author of the book cannot be empty");
+            this.title = title;
+            this.author = author;
             this.isAvailable = true;
         }
         public void BorrowBook()

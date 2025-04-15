@@ -8,6 +8,10 @@ namespace Lab2
 {
     internal class UserInterface
     {
+        public string ReadString()
+        {
+            return Console.ReadLine();
+        }
         public void ShowMessage(string message) =>
             Console.WriteLine(message);
 
@@ -16,30 +20,6 @@ namespace Lab2
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"Error: {message}");
             Console.ResetColor();
-        }
-        public string GetNonNullString(string prompt)
-        {
-            while (true) 
-            {
-                Console.WriteLine(prompt);
-                string result = Console.ReadLine();
-                if (!string.IsNullOrWhiteSpace(result))
-                    return result;
-                
-                else
-                    ShowError("The entered text must not be empty");
-            }   
-        }
-        public string TestNullString(string count, string prompt) 
-        {
-            if (string.IsNullOrWhiteSpace(count))
-            {
-                ShowError(prompt);
-                Environment.Exit(0);
-                return "..";
-            }
-            else
-                return count;
         }
     }
 }
