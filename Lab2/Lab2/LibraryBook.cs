@@ -8,7 +8,6 @@ namespace Lab2
 {
     internal class LibraryBook
     {
-        private readonly UserInterface _userInterface = new UserInterface();
         
         private readonly string title;
         private readonly string author;
@@ -20,12 +19,17 @@ namespace Lab2
             this.author = author;
             this.isAvailable = true;
         }
-        public void BorrowBook()
+        public bool BorrowBook()
         {
             if (this.isAvailable)
+            {
                 this.isAvailable = false;
+                return true;
+            }
             else
-                _userInterface.ShowMessage("The book is not available");
+            {
+                return false;
+            }
         }
         public void ReturnBook() =>
             this.isAvailable = true;

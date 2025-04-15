@@ -1,7 +1,6 @@
 ﻿using Lab2;
 UserInterface userInterface = new UserInterface();
-Logic logic = new Logic();
-LibraryBook book = logic.CreateLibraryBook();
+LibraryBook book = userInterface.CreateLibraryBook();
 
 userInterface.ShowMessage(book.GetInfo());
 book.BorrowBook();
