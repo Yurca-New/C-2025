@@ -38,18 +38,6 @@ namespace Lab2
             }
         }
 
-        public void TryBorrowBook(LibraryBook book)
-        {
-            if (book.BorrowBook())
-            {
-                ShowMessage("The book has been borrowed successfully.");
-            }
-            else
-            {
-                ShowError("The book is not available for borrowing.");
-            }
-        }
-
         public LibraryBook CreateLibraryBook()
         {
             string title = GetNonNullString("Enter the book title:");
