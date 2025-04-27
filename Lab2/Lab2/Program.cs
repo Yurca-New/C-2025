@@ -1,15 +1,23 @@
 ﻿using Lab2;
 UserInterface userInterface = new UserInterface();
-LibraryBook book = userInterface.CreateLibraryBook();
+LibraryService libraryService = new LibraryService(userInterface);
+LibraryBook book = libraryService.CreateLibraryBook();
 
-userInterface.ShowMessage(book.GetInfo());
-book.BorrowBook();
+string initialInfo = book.GetInfo();
+userInterface.ShowMessage(initialInfo);
+
+bool borrowed = book.BorrowBook();
 userInterface.ShowMessage("After borrowing the book:");
-userInterface.ShowMessage(book.GetInfo());
+string borrowedInfo = book.GetInfo();
+userInterface.ShowMessage(borrowedInfo);
 
-book.BorrowBook();
+bool secondBorrowAttempt = book.BorrowBook();
+if (!secondBorrowAttempt)
+{
+    userInterface.ShowError("Cannot borrow the book again. It is already borrowed.");
+}
 
 book.ReturnBook();
 userInterface.ShowMessage("After returning the book:");
-string bookInfo = book.GetInfo();
-userInterface.ShowMessage(bookInfo);
+string returnedInfo = book.GetInfo();
+userInterface.ShowMessage(returnedInfo);
