@@ -1,12 +1,8 @@
 ﻿using lab3;
-Device[] devices = new Device[]
-    {
-        new Laptop(),
-        new Smartphone(),
-        new Tablet()
-    };
+Device laptop = new Laptop();
+Device smartphone = new Smartphone();
+Device tablet = new Tablet();
 
-foreach (Device device in devices)
-{
-    device.TurnOn();
-}
+laptop.TurnOn();
+smartphone.TurnOn();
+tablet.TurnOn();
