@@ -64,6 +64,63 @@ namespace Lab5
             _books.Add(book);
             _consoleInterface.ShowMessage($"Added {bookType} - Title: {title}, Author: {author}");
         }
+        private void RemoveBook()
+        {
+            if (_books.Count == 0)
+            {
+                _consoleInterface.ShowMessage("No books to remove.");
+                return;
+            }
+            ShowListBook();
+            string input = _consoleInterface.GetNonNullString("Enter the number of the book to remove:");
+            if (int.TryParse(input, out int index) && index >= 1 && index <= _books.Count)
+            {
+                var removedBook = _books[index - 1];
+                _books.RemoveAt(index - 1);
+                _consoleInterface.ShowMessage($"Removed book: {removedBook.Title}");
+            }
+            else
+            {
+                _consoleInterface.ShowError("Invalid selection.");
+            }
+        }
+        private void ChangeBookType()
+        {
+            if (_books.Count == 0)
+            {
+                _consoleInterface.ShowMessage("No books to modify.");
+                return;
+            }
+            ShowListBook();
+            string input = _consoleInterface.GetNonNullString("Enter the number of the book to change type:");
+            if (int.TryParse(input, out int index) && index >= 1 && index <= _books.Count)
+            {
+                var selectedBook = _books[index - 1];
+                string newType = _consoleInterface.GetNonNullString("Enter new type (EBook/PrintedBook):");
+                if (newType.Equals("EBook", StringComparison.OrdinalIgnoreCase) && selectedBook is not EBook)
+                {
+                    _books[index - 1] = new EBook(selectedBook.Title, selectedBook.Author);
+                    _consoleInterface.ShowMessage("Book type changed to EBook.");
+                }
+                else if (newType.Equals("PrintedBook", StringComparison.OrdinalIgnoreCase) && selectedBook is not PrintedBook)
+                {
+                    _books[index - 1] = new PrintedBook(selectedBook.Title, selectedBook.Author);
+                    _consoleInterface.ShowMessage("Book type changed to PrintedBook.");
+                }
+                else
+                {
+                    _consoleInterface.ShowError("Invalid type or book is already of this type.");
+                }
+            }
+            else
+            {
+                _consoleInterface.ShowError("Invalid selection.");
+            }
+        }
+        private void Exit()
+        {
+            _consoleInterface.ShowMessage("Exiting...");
+        }
         public void Run()
         {
             while (true)
@@ -82,60 +139,15 @@ namespace Lab5
                         break;
 
                     case "3":
-                        if (_books.Count == 0)
-                        {
-                            _consoleInterface.ShowMessage("No books to remove.");
-                            break;
-                        }
-                        ShowListBook();
-                        string removeInput = _consoleInterface.GetNonNullString("Enter the number of the book to remove:");
-                        if (int.TryParse(removeInput, out int removeIndex) && removeIndex >= 1 && removeIndex <= _books.Count)
-                        {
-                            var removedBook = _books[removeIndex - 1];
-                            _books.RemoveAt(removeIndex - 1);
-                            _consoleInterface.ShowMessage($"Removed book: {removedBook.Title}");
-                        }
-                        else
-                        {
-                            _consoleInterface.ShowError("Invalid selection.");
-                        }
+                        RemoveBook();
                         break;
 
                     case "4":
-                        if (_books.Count == 0)
-                        {
-                            _consoleInterface.ShowMessage("No books to modify.");
-                            break;
-                        }
-                        ShowListBook();
-                        string changeInput = _consoleInterface.GetNonNullString("Enter the number of the book to change type:");
-                        if (int.TryParse(changeInput, out int changeIndex) && changeIndex >= 1 && changeIndex <= _books.Count)
-                        {
-                            var selectedBook = _books[changeIndex - 1];
-                            string newType = _consoleInterface.GetNonNullString("Enter new type (EBook/PrintedBook):");
-                            if (newType.Equals("EBook", StringComparison.OrdinalIgnoreCase) && selectedBook is not EBook)
-                            {
-                                _books[changeIndex - 1] = new EBook(selectedBook.Title, selectedBook.Author);
-                                _consoleInterface.ShowMessage("Book type changed to EBook.");
-                            }
-                            else if (newType.Equals("PrintedBook", StringComparison.OrdinalIgnoreCase) && selectedBook is not PrintedBook)
-                            {
-                                _books[changeIndex - 1] = new PrintedBook(selectedBook.Title, selectedBook.Author);
-                                _consoleInterface.ShowMessage("Book type changed to PrintedBook.");
-                            }
-                            else
-                            {
-                                _consoleInterface.ShowError("Invalid type or book is already of this type.");
-                            }
-                        }
-                        else
-                        {
-                            _consoleInterface.ShowError("Invalid selection.");
-                        }
+                        ChangeBookType();
                         break;
 
                     case "5":
-                        _consoleInterface.ShowMessage("Exiting...");
+                        Exit();
                         return;
 
                     default:
