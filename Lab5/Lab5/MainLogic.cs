@@ -15,49 +15,70 @@ namespace Lab5
             _consoleInterface = new ConsoleInterface();
             _books = new List<Book>();
         }
+        private void ShowListBook()
+        {
+            for (int i = 0; i < _books.Count; i++)
+            {
+                _consoleInterface.ShowMessage($"{i + 1}. {_books[i].GetType().Name} - Title: {_books[i].Title}, Author: {_books[i].Author}");
+            }
+        }
+        private void ShowMenu()
+        {
+            _consoleInterface.ShowMessage("\nLibrary Management System");
+            _consoleInterface.ShowMessage("1. View all books");
+            _consoleInterface.ShowMessage("2. Add new book");
+            _consoleInterface.ShowMessage("3. Remove book");
+            _consoleInterface.ShowMessage("4. Change book type");
+            _consoleInterface.ShowMessage("5. Exit");
+        }
+        private void ViewAllBooks()
+        {
+            if (_books.Count == 0)
+            {
+                _consoleInterface.ShowMessage("No books available.");
+            }
+            else
+            {
+                ShowListBook();
+            }
+        }
+        private void AddNewBook()
+        {
+            string title = _consoleInterface.GetNonNullString("Enter book title:");
+            string author = _consoleInterface.GetNonNullString("Enter book author:");
+            string bookType = _consoleInterface.GetNonNullString("Enter book type (EBook/PrintedBook):");
+            Book book;
+            if (bookType.Equals("EBook", StringComparison.OrdinalIgnoreCase))
+            {
+                book = new EBook(title, author);
+            }
+            else if (bookType.Equals("PrintedBook", StringComparison.OrdinalIgnoreCase))
+            {
+                book = new PrintedBook(title, author);
+            }
+            else
+            {
+                _consoleInterface.ShowError("Invalid book type. Please enter either 'EBook' or 'PrintedBook'.");
+                return;
+            }
+            _books.Add(book);
+            _consoleInterface.ShowMessage($"Added {bookType} - Title: {title}, Author: {author}");
+        }
         public void Run()
         {
             while (true)
             {
-                _consoleInterface.ShowMessage("\nMenu:\n1. View books\n2. Add book\n3. Remove book\n4. Change book type\n5. Exit");
+                ShowMenu();
                 string choice = _consoleInterface.GetNonNullString("Select an option (1-5):");
 
                 switch (choice)
                 {
                     case "1":
-                        if (_books.Count == 0)
-                        {
-                            _consoleInterface.ShowMessage("No books available.");
-                        }
-                        else
-                        {
-                            for (int i = 0; i < _books.Count; i++)
-                            {
-                                _consoleInterface.ShowMessage($"{i + 1}. {_books[i].GetType().Name} - Title: {_books[i].Title}, Author: {_books[i].Author}");
-                            }
-                        }
+                        ViewAllBooks();
                         break;
 
                     case "2":
-                        string title = _consoleInterface.GetNonNullString("Enter book title:");
-                        string author = _consoleInterface.GetNonNullString("Enter book author:");
-                        string bookType = _consoleInterface.GetNonNullString("Enter book type (EBook/PrintedBook):");
-                        Book book;
-                        if (bookType.Equals("EBook", StringComparison.OrdinalIgnoreCase))
-                        {
-                            book = new EBook(title, author);
-                        }
-                        else if (bookType.Equals("PrintedBook", StringComparison.OrdinalIgnoreCase))
-                        {
-                            book = new PrintedBook(title, author);
-                        }
-                        else
-                        {
-                            _consoleInterface.ShowError("Invalid book type. Please enter either 'EBook' or 'PrintedBook'.");
-                            break;
-                        }
-                        _books.Add(book);
-                        _consoleInterface.ShowMessage($"Added {bookType} - Title: {title}, Author: {author}");
+                        AddNewBook();
                         break;
 
                     case "3":
@@ -66,10 +87,7 @@ namespace Lab5
                             _consoleInterface.ShowMessage("No books to remove.");
                             break;
                         }
-                        for (int i = 0; i < _books.Count; i++)
-                        {
-                            _consoleInterface.ShowMessage($"{i + 1}. {_books[i].GetType().Name} - Title: {_books[i].Title}, Author: {_books[i].Author}");
-                        }
+                        ShowListBook();
                         string removeInput = _consoleInterface.GetNonNullString("Enter the number of the book to remove:");
                         if (int.TryParse(removeInput, out int removeIndex) && removeIndex >= 1 && removeIndex <= _books.Count)
                         {
@@ -89,10 +107,7 @@ namespace Lab5
                             _consoleInterface.ShowMessage("No books to modify.");
                             break;
                         }
-                        for (int i = 0; i < _books.Count; i++)
-                        {
-                            _consoleInterface.ShowMessage($"{i + 1}. {_books[i].GetType().Name} - Title: {_books[i].Title}, Author: {_books[i].Author}");
-                        }
+                        ShowListBook();
                         string changeInput = _consoleInterface.GetNonNullString("Enter the number of the book to change type:");
                         if (int.TryParse(changeInput, out int changeIndex) && changeIndex >= 1 && changeIndex <= _books.Count)
                         {
