@@ -19,9 +19,9 @@ namespace Lab5
         {
             _bookType = newType;
         }
-        public void Read()
+        public string Read()
         {
-            Console.WriteLine("Чтение печатной книги");
+            return "Reading an printed book";
         }
     }
 }
