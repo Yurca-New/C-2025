@@ -1,3 +1,8 @@
-qqqq 1989 Student 5 6 3 4
-wwww 1978 Minister
-eeee 1967 Teacher 54 68 34
+Ivanov 2000 student 5 6 3 4
+Petrov 1978 minister
+Sidorov 1967 teacher 54 68 34
+Smirnova 2003 student 2 3 2 5 4
+Kuznetsov 1985 teacher 40 50 60
+Orlova 2004 student 5 5 5 5
+Morozov 1990 businessman
+Fedorov 1995 teacher 30 25 45 50

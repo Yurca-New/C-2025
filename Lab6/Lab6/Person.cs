@@ -21,11 +21,11 @@ namespace Lab6
         public virtual string GetInfo()
         {
             int age = DateTime.Now.Year - BirthYear;
-            return $"{age}";
+            return $"{age} years";
         }
         public virtual string GetFullInfo()
         {
-            return $"{Surname}\t{Status}\t{BirthYear}\t{GetInfo()}";
+            return $"{Surname}\t{BirthYear}\t{Status}\t \t{GetInfo()}";
         }
     }
 }
