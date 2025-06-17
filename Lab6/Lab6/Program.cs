@@ -1,12 +1,21 @@
 ﻿using Lab6;
-using static Lab6.IComparer;
+using Microsoft.VisualBasic;
 using System.Reflection;
+using static Lab6.IComparer;
 
 /// <summary>
 /// Main program entry point for processing person data
 /// </summary>
 class Program
 {
+    public const string STUDENT_STATUS = "student";
+    public const string TEACHER_STATUS = "teacher";
+
+    public const int MIN_PARTS_COUNT = 3;
+    public const int SURNAME_INDEX = 0;
+    public const int YEAR_INDEX = 1;
+    public const int STATUS_INDEX = 2;
+    public const int DATA_START_INDEX = 3;
     /// <summary>
     /// Main execution method
     /// </summary>
@@ -31,28 +40,34 @@ class Program
         foreach (var line in lines)
         {
             var parts = line.Split(' ');
-            if (parts.Length < 3)
+
+            if (parts.Length < MIN_PARTS_COUNT)
             {
                 Console.WriteLine($"Invalid line format: {line}");
                 continue;
             }
 
-            string surname = parts[0];
-            int year = int.Parse(parts[1]);
-            string status = parts[2];
+            string surname = parts[SURNAME_INDEX];
+            int year = int.Parse(parts[YEAR_INDEX]);
+            string status = parts[STATUS_INDEX];
 
-            if (status == "student")
+            if (status == STUDENT_STATUS)
             {
-                if (parts.Length >= 4)
+                if (parts.Length > DATA_START_INDEX)
                 {
-                    int[] grades = parts.Skip(3).Select(int.Parse).ToArray();
+                    int[] grades = parts.Skip(DATA_START_INDEX).Select(int.Parse).ToArray();
                     people.Add(new Student(surname, year, grades));
                 }
+                else
+                {
+                    // Если нет оценок — можно добавить пустой массив или как-то обработать
+                    people.Add(new Student(surname, year, new int[0]));
+                }
             }
-            else if (status == "teacher")
+            else if (status == TEACHER_STATUS)
             {
-                int[] loads = parts.Length > 3 ?
-                    parts.Skip(3).Select(int.Parse).ToArray() : new int[0];
+                int[] loads = parts.Length > DATA_START_INDEX ?
+                    parts.Skip(DATA_START_INDEX).Select(int.Parse).ToArray() : new int[0];
                 people.Add(new Teacher(surname, year, loads));
             }
             else
