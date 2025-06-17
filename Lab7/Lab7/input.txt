@@ -1,0 +1,20 @@
+Conference;25.06.2025;DK "Khimik"
+Workshop;28.06.2025;OKC Lange St.
+Seminar;19.06.2024;Park of Culture and Rest
+Meetup;28.06.2025;Park of Culture and Rest
+Conference;30.07.2025;City Hall
+Workshop;05.08.2025;Tech Hub
+Seminar;12.09.2024;Community Center
+Meetup;20.09.2025;Open Garden
+Conference;15.10.2025;University Auditorium
+Workshop;22.10.2025;Innovation Lab
+Seminar;01.11.2024;Library Conference Room
+Meetup;05.11.2025;Downtown Plaza
+Conference;10.12.2025;Business Center
+Workshop;18.12.2025;Expo Center
+Seminar;25.12.2024;Cafe Central
+Meetup;30.12.2025;Rooftop Lounge
+Conference;05.01.2026;Main Theater
+Workshop;12.01.2026;Creative Space
+Seminar;20.01.2025;Tech Park
+Meetup;28.01.2026;Community Hall

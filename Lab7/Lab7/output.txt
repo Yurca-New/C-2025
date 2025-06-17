@@ -1,0 +1,32 @@
+﻿Conference
+№	Место проведения	Дата проведения	Количество дней до мероприятия
+1	DK "Khimik"	25.06.2025	7 d.
+2	City Hall	30.07.2025	42 d.
+3	University Auditorium	15.10.2025	119 d.
+4	Business Center	10.12.2025	175 d.
+5	Main Theater	05.01.2026	201 d.
+
+Workshop
+№	Место проведения	Дата проведения	Количество дней до мероприятия
+1	OKC Lange St.	28.06.2025	10 d.
+2	Tech Hub	05.08.2025	48 d.
+3	Innovation Lab	22.10.2025	126 d.
+4	Expo Center	18.12.2025	183 d.
+5	Creative Space	12.01.2026	208 d.
+
+Seminar
+№	Место проведения	Дата проведения	Количество дней до мероприятия
+1	Park of Culture and Rest	19.06.2024	Event has passed
+2	Community Center	12.09.2024	Event has passed
+3	Library Conference Room	01.11.2024	Event has passed
+4	Cafe Central	25.12.2024	Event has passed
+5	Tech Park	20.01.2025	Event has passed
+
+Meetup
+№	Место проведения	Дата проведения	Количество дней до мероприятия
+1	Park of Culture and Rest	28.06.2025	10 d.
+2	Open Garden	20.09.2025	94 d.
+3	Downtown Plaza	05.11.2025	140 d.
+4	Rooftop Lounge	30.12.2025	195 d.
+5	Community Hall	28.01.2026	224 d.
+
