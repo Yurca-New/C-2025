@@ -1,0 +1,5 @@
+Gripp;9;Therapy
+Angina;10;Therapy
+Diabet;5;Endocrinology
+Ozhirenie;15;Endocrinology
+Covid;11;Infectious
