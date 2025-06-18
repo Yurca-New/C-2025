@@ -19,6 +19,13 @@ namespace Lab8
         private const int DiagnosNameIndex = 0;
         private const int DiagnosDurationIndex = 1;
         private const int DiagnosHospitalDipartmentIndex = 2;
+
+        /// <summary>
+        /// Reads a list of patients from a file.
+        /// </summary>
+        /// <param name="inputFile">The path to the file containing patient data.</param>
+        /// <param name="diagnos">The list of diagnoses to associate with patients.</param>
+        /// <returns>A list of <see cref="Pacient"/> objects read from the file.</returns>
         public static List<Pacient> ReadPacient(string inputFile, List<Diagnos> diagnos)
         {
             return File.ReadAllLines(inputFile)
@@ -27,6 +34,12 @@ namespace Lab8
                 .Select(parts => new Pacient(parts[PacientSurnameIndex], DateTime.Parse(parts[PacientDateAdmissionIndex]), parts[PacientDiagnosisIndex], diagnos))
                 .ToList();
         }
+
+        /// <summary>
+        /// Reads a list of diagnoses from a file.
+        /// </summary>
+        /// <param name="inputFile">The path to the file containing diagnosis data.</param>
+        /// <returns>A list of <see cref="Diagnos"/> objects read from the file.</returns>
         public static List<Diagnos> ReadDiagnos(string inputFile)
         {
             return File.ReadAllLines(inputFile)
