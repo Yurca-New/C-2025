@@ -28,6 +28,12 @@ namespace Lab8
             DisplayeMessage($"Error: {errorMessage}");
             Console.ResetColor();
         }
+
+        /// <summary>
+        /// Displays a list of patients grouped by diagnosis, including their treatment department.
+        /// </summary>
+        /// <param name="pacients">The list of patients to display.</param>
+        /// <param name="diagnos">The list of diagnoses for grouping and department information.</param>
         public static void DisplayPacients(List<Pacient> pacients, List<Diagnos> diagnos)
         {
             if (pacients == null || pacients.Count == 0)
