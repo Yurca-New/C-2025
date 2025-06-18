@@ -8,19 +8,34 @@ namespace Lab7
 {
     internal static class FileInteraction
     {
+        private const int EventPartsCount = 3;
+        private const int EventTypeIndex = 0;
+        private const int EventDateIndex = 1;
+        private const int EventLocationIndex = 2;
+        /// <summary>
+        /// Reads event information from a specified input file and returns a list of <see cref="EventInfo"/> objects.
+        /// </summary>
+        /// <param name="inputFile">The path to the input file containing event data.</param>
+        /// <returns>A list of <see cref="EventInfo"/> objects parsed from the file.</returns>
+
         public static List<EventInfo> ReadEvents(string inputFile)
         {
             return File.ReadAllLines(inputFile)
                 .Select(line => line.Split(';'))
-                .Where(parts => parts.Length == 3)
+                .Where(parts => parts.Length == EventPartsCount)
                 .Select(parts => new EventInfo(
-                    Enum.Parse<SocialEvent>(parts[0]),
-                    DateTime.Parse(parts[1]),
-                    parts[2]
+                    Enum.Parse<SocialEvent>(parts[EventTypeIndex]),
+                    DateTime.Parse(parts[EventDateIndex]),
+                    parts[EventLocationIndex]
                 ))
                 .ToList();
         }
 
+        /// <summary>
+        /// Writes the provided list of events to the specified output file, grouping them by event type.
+        /// </summary>
+        /// <param name="outputFile">The path to the output file where event data will be written.</param>
+        /// <param name="events">The list of <see cref="EventInfo"/> objects to write to the file.</param>
         public static void WriteEvents(string outputFile, List<EventInfo> events)
         {
             using (StreamWriter writer = new StreamWriter(outputFile, false, Encoding.UTF8))
