@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace Lab8
 {
+    /// <summary>
+    /// Represents a diagnosis with its name, treatment duration, and hospital department.
+    /// Notifies observers about changes in department or duration.
+    /// </summary>
     internal class Diagnos
     {
         /// <summary>
         /// Gets or sets the name of the diagnosis.
         /// </summary>
-        public string DiagnosisName;
+        public string DiagnosisName { get; set; }
 
         private int _durationOfTreatment;
 

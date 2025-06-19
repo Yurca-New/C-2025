@@ -8,6 +8,9 @@ using Lab8;
 
 namespace Lab8
 {
+    /// <summary>
+    /// Provides methods for reading patient and diagnosis data from files.
+    /// </summary>
     internal static class FileInteraction
     {
         private const int PacientPartsCount = 4;
@@ -31,7 +34,11 @@ namespace Lab8
             return File.ReadAllLines(inputFile)
                 .Select(line => line.Split(';'))
                 .Where(parts => parts.Length == PacientPartsCount)
-                .Select(parts => new Pacient(parts[PacientSurnameIndex], DateTime.Parse(parts[PacientDateAdmissionIndex]), parts[PacientDiagnosisIndex], diagnos))
+                .Select(parts => new Pacient(
+                    parts[PacientSurnameIndex],
+                    DateTime.Parse(parts[PacientDateAdmissionIndex]),
+                    parts[PacientDiagnosisIndex],
+                    diagnos))
                 .ToList();
         }
 
@@ -45,7 +52,10 @@ namespace Lab8
             return File.ReadAllLines(inputFile)
                 .Select(line => line.Split(';'))
                 .Where(parts => parts.Length == DiagnosPartsCount)
-                .Select(parts => new Diagnos(parts[DiagnosNameIndex], int.Parse(parts[DiagnosDurationIndex]), parts[DiagnosHospitalDipartmentIndex]))
+                .Select(parts => new Diagnos(
+                    parts[DiagnosNameIndex],
+                    int.Parse(parts[DiagnosDurationIndex]),
+                    parts[DiagnosHospitalDipartmentIndex]))
                 .ToList();
         }
     }
